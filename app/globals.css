@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
-  background-image: url("yoga.jpg");
+html {
+  background-image: url("images/yoga.jpg");
   overflow: hidden;
   position: relative;
   background-size: cover;
@@ -11,11 +11,8 @@ main {
   background-position: center;
   height: 100vh;
 }
-main p{
-  padding: 20px 25px;
-  background: linear-gradient(hsla(0,0%,100%,.99),hsla(0,0%,100%,.50));
-}
-main img {
+
+html img {
   display: flex;
   justify-content: center;
   border: 2px solid wheat;

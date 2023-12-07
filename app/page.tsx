@@ -1,10 +1,17 @@
-import Image from "next/image";
-import ggg from "./signin.png"
+import { useSession } from "next-auth/react";
 
-export default function Home() {
+export default async function Home() {
+  // const {data: session} = useSession();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <p className="m-40 text-center text-xl">
+      <p>Home Page</p>
+      {/* <button onClick={() => console.log({session})}></button> */}
+      {/* Expires: {session?.expires}
+      User-Email: {session?.user?.email}
+      User-name: {session?.user?.name}
+      User-image: {session?.user?.image} */}
+      {/* <p className="m-40 text-center text-xl">
         Under Maintenance
         <br />
         You can view the project on figma:
@@ -17,7 +24,14 @@ export default function Home() {
         width={350}
         height={150}
       ></Image></a>
-      </p>
+      </p> */}
+
+      {/* {session?.user?.name ? (
+        <div>{session?.user?.name}</div>
+      ) : (
+        <div>Not signed in</div>
+      )} */}
+      {/* { toggle ? <Signup handleToggle={handleToggle}/> : <Login handleToggle={handleToggle}/> } */}
     </main>
   );
 }
